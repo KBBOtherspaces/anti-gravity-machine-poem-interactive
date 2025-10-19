@@ -1,0 +1,60 @@
+body {
+    color: #282c30;
+    opacity: 0.8;
+    font-family: monospace;
+    font-size: 3vh;
+    font-weight: normal;
+    line-height: 6vh;
+    vertical-align: bottom;
+    text-decoration: none;
+    margin: 8vw 8vh;
+  }
+  
+  a {
+    color: #282c30;
+    opacity: 0.8;
+    font-family: monospace;
+    font-size: 3vh;
+    font-weight: normal;
+    line-height: 6vh;
+    text-decoration: underline;
+    }
+  
+  a:hover {
+    color: #4f6269;
+    opacity: 0.6;
+    font-family: monospace;
+    font-size: 3vh;
+    font-weight: bold;
+    line-height: 6vh;
+    }
+  .container {
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    display: inline-block;
+    border-radius: 8px;
+    justify-content: center;
+    margin: 8px;
+    padding: 8vw;
+    background-color: #d8e4f0;
+  }
+    
+  .animated-text {
+    font-size: 3vh;
+    line-height: 6vh;
+    white-space: nowrap;
+    display: block;
+    animation: verticalScroll 48s linear;
+    transform-origin: bottom-top;
+  }
+  
+  @keyframes verticalScroll {
+    0% {
+      transform: rotate(90deg) translateY(100%);
+    }
+    100% {
+      transform: rotate(90deg) translateY(-100%);
+    }
+  }
+  
